@@ -4,110 +4,256 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="imagenes/logo-favicom.png" type="image/png">
-    <title>Programas - Red Futuro Verde</title>
+    <title>Programas | Red Futuro Verde</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<header>
-        <h1>Red Futuro Verde</h1>
+
+    <header class="header">
+        <div class="header-container">
+            <a href="index.html" class="logo-link">
+
+                <img src="imagenes/logo-nav.png" alt="Logo Red Futuro Verde" class="logo">
+
+            </a>
 
         <!-- NAV -->
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="nosotros.html">Nosotros</a></li>
-                <li><a href="programas.html">Programas</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="programas.html" class="active">Programas</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
         <!--MAIN-->
 
     <main>
         <!-- BANNER -->
-        <section>
 
-            <img src="imagenes/banners/programas.png" alt="Grupo de personas trabajando en un parque">
+        <section class="banner">
+            <div class="banner-container">
 
+                <img src="imagenes/banners/programas.png" alt="Grupo de personas trabajando en un parque">
+            
+                <div class="banner-text">
+                  <h1>Programas</h1>
+                  <p>Descubre nuestros programas y cómo puedes participar en ellos.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- INTRO -->
+
+        <section class="programas-intro">
+            <div class="container">
+                <div class="mission-title-wrapper">
+                    <span class="line"></span>
+                    <div class="mission-icon-placeholder"></div>
+                    <span class="line"></span>
+                </div>
+                <p class="programs-label">Lo que hacemos</p>
+                <h2>Acciones que transforman</h2>
+            </div>
         </section>
 
         <!-- PROGRAMAS -->
-        <section>
 
-            <h2>Nuestros Programas</h2>
+        <section class="programas">
+          <div class="programas-container container">
+              
+            <article class="programa-card" id="reforestacion-urbana">
 
-            <article>
+                <img src="imagenes/imagenes-programas/reforestacion-urbana.png" alt="Avenida con muchos árboles" class="programa-img">
 
-              <h3>Reforestación Urbana</h3>
-              
-              <p>
-                <strong>Descripción:</strong>
-                Plantación de árboles en zonas urbanas para mejorar la calidad del aire.
-              </p>
-              
-              <p>
-                <strong>Dirigido a:</strong>
-                Vecinos y voluntarios.
-              </p>
-              
-              <p>
-                <strong>Cómo participar:</strong>
-                Inscribirse en jornadas mensuales.
-              </p>
-              <img src="imagenes/imagenes-programas/Reforestacion Urbana.png" alt="Avenida con muchos arboles">
-              
+                <div class="programa-content">
+
+                    <div class="programa-header">
+                        <div class="programa-icon"></div>
+                        <h3>1. Reforestación Urbana</h3>
+                    </div>
+
+                    <div class="programa-details">
+
+                        <div class="programa-detail-item">
+                            <p class="programa-detail-label">
+                                <span class="programa-detail-icon"></span>
+                                Descripción
+                            </p>
+                            <p>Plantación de árboles en zonas urbanas para mejorar la calidad del aire.</p>
+                        </div>
+
+                        <div class="programa-detail-item">
+                            <p class="programa-detail-label">
+                                <span class="programa-detail-icon"></span>
+                                Dirigido a
+                            </p>
+                            <p>Vecinos y voluntarios.</p>
+                        </div>
+
+                        <div class="programa-detail-item">
+                            <p class="programa-detail-label">
+                                <span class="programa-detail-icon"></span>
+                                Cómo participar
+                            </p>
+                            <p>Inscribirse en jornadas mensuales.</p>
+                        </div>
+
+                    </div>
+
+                    <a href="contacto.html" class="btn-programa">Participar en jornadas →</a>
+
+                </div>
             </article>
 
-            <article>
+            <article class="programa-card" id="educacion-ambiental">
 
-                <h3>Educación Ambiental</h3>
+                <img src="imagenes/imagenes-programas/educacion-ambiental.png" alt="Niños en un taller de reciclaje" class="programa-img">
 
-                <p>
-                    <strong>Descripción:</strong>
-                    Talleres en escuelas sobre reciclaje y sostenibilidad
-                </p>
+                <div class="programa-content">
 
-                <p>
-                    <strong>Dirigido a:</strong>
-                    Estudiantes y docentes
-                </p>
+                    <div class="programa-header">
+                        <div class="programa-icon"></div>
+                        <h3>2. Educación Ambiental</h3>
+                    </div>
 
-                <p>
-                    <strong>Cómo participar:</strong>
-                    Solicitar charlas desde la web
-                </p>
+                    <div class="programa-details">
 
-                <img src="imagenes/imagenes-programas/Educacion Ambiental.png" alt="Niños en un taller de reciclaje">
+                        <div class="programa-detail-item">
+                            <p class="programa-detail-label">
+                                <span class="programa-detail-icon"></span>
+                                Descripción
+                            </p>
+                            <p>Talleres en escuelas sobre reciclaje y sostenibilidad.</p>
+                        </div>
 
+                        <div class="programa-detail-item">
+                            <p class="programa-detail-label">
+                                <span class="programa-detail-icon"></span>
+                                Dirigido a
+                            </p>
+                            <p>Estudiantes y docentes.</p>
+                        </div>
+
+                        <div class="programa-detail-item">
+                            <p class="programa-detail-label">
+                                <span class="programa-detail-icon"></span>
+                                Cómo participar
+                            </p>
+                            <p>Solicitar charlas desde la web.</p>
+                        </div>
+
+                    </div>
+
+                    <a href="contacto.html" class="btn-programa">Solicitar charla →</a>
+
+                </div>
             </article>
 
-            <article>
+            <article class="programa-card" id="voluntariado-verde">
 
-                <h3>Voluntariado Verde</h3>
+                <img src="imagenes/imagenes-programas/voluntariado-verde.png" alt="Personas limpiando un parque" class="programa-img">
 
-                <p>
-                    <strong>Descripción:</strong>
-                    Actividades de limpieza y concientización en espacios públicos
-                </p>
+                <div class="programa-content">
 
-                <p>
-                    <strong>Dirigido a:</strong>
-                    Público general
-                </p>
+                    <div class="programa-header">
+                        <div class="programa-icon"></div>
+                        <h3>3. Voluntariado Verde</h3>
+                    </div>
 
-                <p>
-                    <strong>Cómo participar:</strong>
-                    Registrarse como voluntario
-                </p>
+                    <div class="programa-details">
 
-                <img src="imagenes/imagenes-programas/Voluntariado Ecológico.png" alt="Personas limpiando un parque">
+                        <div class="programa-detail-item">
+                            <p class="programa-detail-label">
+                                <span class="programa-detail-icon"></span>
+                                Descripción
+                            </p>
+                            <p>Actividades de limpieza y concientización en espacios públicos.</p>
+                        </div>
 
+                        <div class="programa-detail-item">
+                            <p class="programa-detail-label">
+                                <span class="programa-detail-icon"></span>
+                                Dirigido a
+                            </p>
+                            <p>Público general.</p>
+                        </div>
+
+                        <div class="programa-detail-item">
+                            <p class="programa-detail-label">
+                                <span class="programa-detail-icon"></span>
+                                Cómo participar
+                            </p>
+                            <p>Registrarse como voluntario.</p>
+                        </div>
+
+                    </div>
+
+                    <a href="contacto.html" class="btn-programa">Quiero ser voluntario →</a>
+
+                </div>
             </article>
-
+          </div>
         </section>
+    </main>
 
-  <footer>
-     <p>© 2018 Red Futuro Verde ONG</p>
-  </footer>
+    <!--FOOTER-->
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-columns">
+
+                <!-- Marca + redes -->
+                <div class="footer-brand">
+                    <img src="imagenes/logo-footer.png" alt="Logo Red Futuro Verde" class="footer-logo">
+                    <p>Juntos construimos un futuro más sostenible para todos.</p>
+                    <div class="footer-social">
+                        <a href="https://instagram.com/redfuturoverde" target="_blank" rel="noopener noreferrer">Instagram</a>
+                        <a href="#" target="_blank" rel="noopener noreferrer">Facebook</a>
+                        <a href="#" target="_blank" rel="noopener noreferrer">Twitter</a>
+                    </div>
+                </div>
+
+                <!-- Enlaces -->
+                <div class="footer-links">
+                    <h4>Enlaces</h4>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="nosotros.html">Nosotros</a></li>
+                        <li><a href="programas.html">Programas</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contacto -->
+                <div class="footer-contact">
+                    <h4>Contacto</h4>
+                    <p>Av. Siempre Viva 123, Buenos Aires, Argentina</p>
+                    <p><a href="tel:+541112345678">+54 11 1234-5678</a></p>
+                    <p><a href="mailto:contacto@redfuturoverde.org">contacto@redfuturoverde.org</a></p>
+                </div>
+
+                <!-- Sumate -->
+                <div class="footer-cta">
+                    <h4>Sumate</h4>
+                    <p>Tu apoyo hace posible un planeta mejor.</p>
+                    <a href="contacto.html" class="btn-donar">Donar ahora</a>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2024 Red Futuro Verde ONG - Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
 </body>
 </html>
