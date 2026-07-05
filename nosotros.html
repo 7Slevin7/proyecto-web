@@ -4,118 +4,261 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="imagenes/logo-favicom.png" type="image/png">
-    <title>Nosotros - Red Futuro Verde</title>
+    <title>Nosotros | Red Futuro Verde</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Red Futuro Verde</h1>
 
-        <!-- NAV -->
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="nosotros.html">Nosotros</a></li>
-                <li><a href="programas.html">Programas</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+    <header class="header" >
+        <div class="header-container">  
+            <a href="index.html" class="logo-link">
+
+                <img src="imagenes/logo-nav.png" alt="Logo Red Futuro Verde" class="logo">
+
+            </a>
+
+            <!-- NAV -->
+
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="nosotros.html" class="active">Nosotros</a></li>
+                    <li><a href="programas.html">Programas</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <!--MAIN-->
+        <!--MAIN-->
+
     <main>
 
-        <!--BANNER-->
+                <!--BANNER-->
 
-        <section>
-            <img src="imagenes/banners/nosotros.png" alt="grupo de personas hablando sobre el medio ambiente">
-        </section>
+                <section class="banner">
+                    <div class="banner-container"> 
 
-        <!--HISTORIA-->
+                        <img src="imagenes/banners/nosotros.png" alt="grupo de personas hablando sobre el medio ambiente">
 
-        <section>
-            <h2>HISTORIA</h2>
+                        <div class="banner-text">
+                                <h1>Nosotros</h1>
+                                <p>Conoce más sobre nuestra organización y nuestro equipo</p>
+                        </div>
+                    </div>
+                </section>
 
-            <p>
-                Red Futuro Verde nació en 2018 como una iniciativa de un grupo de jóvenes preocupados por la contaminación y la falta de espacios verdes en la ciudad
-            </p>
+                <!--HISTORIA-->
 
-            <p>
-                Con el tiempo, la organización se consolidó como una ONG activa,
-                desarrollando proyectos ambientales y promoviendo el cuidado del
-                medio ambiente en distintas comunidades.
-            </p>
-        </section>
-        
-        <!--VALORES-->
+                <section class="history">
+                    <div class="history-container container">
 
-        <section>
-            <h2>Nuestros valores</h2>
-            <ul>
-                <li>Compromiso ambiental</li>
-                <li>Trabajo en equipo</li>
-                <li>Educación y concientización</li>
-                <li>Responsabilidad social</li>
-            </ul>
-        </section>
+                        <img src="imagenes/imagenes-nosotros/manos-planta.png" alt="Manos sosteniendo una planta joven" class="history-img">
 
-        <!--EQUIPO-->
+                        <div class="history-content">
+                            <div class="history-header">
+                                <div class="history-icon"></div>
+                                <h2>Historia</h2>
+                            </div>
 
-        <section>
-            <h2>Nuestro equipo</h2>
+                            <p>
+                                Red Futuro Verde nació en 2018 como una iniciativa de un grupo de jóvenes preocupados por la contaminación y la falta de espacios verdes en la ciudad.
+                            </p>
 
-            <article>
-                <h3>Laura Mendez</h3>
-                <p>Directora de la organización</p>
-            </article>
+                            <p>
+                                Con el tiempo, la organización se consolidó como una ONG activa,
+                                desarrollando proyectos ambientales y promoviendo el cuidado del
+                                medio ambiente en distintas comunidades.
+                            </p>
+                        </div>
 
-            <article>
-                <h3>Martin Rojas</h3>
-                <p>Coordinador de proyectos</p>
-            </article>
+                    </div>  
+                </section>
 
-            <article>
-                <h3>Ailen Maldonado</h3>
-                <p>Responsable de voluntariado</p>
-            </article>
+                <!--VALORES-->
+                <section class="valores">
+                    <div class="valores-container container">
 
-            <article>
-                <h3>Diego Fernández</h3>
-                <p>Comunicación</p>
-            </article>
-        </section>
+                        <div class="mission-title-wrapper">
+                            <span class="line"></span>
+                            <div class="mission-icon-placeholder"></div>
+                            <span class="line"></span>
+                        </div>
 
-        <!--DATOS INSTITUCIONALES-->
+                        <h2>Nuestros valores</h2>
 
-        <section>
-            <h2>Datos institucionales</h2>
+                        <div class="valores-list">
 
-            <dl>
+                            <div class="valor-item">
+                                <div class="valor-icon"></div>
+                                <h3>Compromiso ambiental</h3>
+                                <p>Actuamos con respeto y cuidado por el planeta en cada acción que realizamos.</p>
+                            </div>
 
-                <dt>Nombre legal</dt>
-                <dd>Red Futuro Verde ONG</dd>
+                            <div class="valor-item">
+                                <div class="valor-icon"></div>
+                                <h3>Trabajo en equipo</h3>
+                                <p>Creemos en la fuerza de la colaboración para lograr grandes cambios.</p>
+                            </div>
 
-                <dt>Fundación</dt>
-                <dd>2018</dd>
+                            <div class="valor-item">
+                                <div class="valor-icon"></div>
+                                <h3>Educación y concientización</h3>
+                                <p>Promovemos el aprendizaje y la información para generar una sociedad más consciente.</p>
+                            </div>
 
-                <dt>Ubicación</dt>
-                <dd>Buenos Aires, Argentina</dd>
+                            <div class="valor-item">
+                                <div class="valor-icon"></div>
+                                <h3>Responsabilidad social</h3>
+                                <p>Nos comprometemos con el bienestar de nuestras comunidades.</p>
+                            </div>
 
-                <dt>Tipo</dt>
-                <dd>Organización sin fines de lucro</dd>
+                        </div>
+                    </div>
+                </section>
 
-                <dt>Ámbito</dt>
-                <dd>Ambiental</dd>
+                <!--EQUIPO + DATOS INSTITUCIONALES-->
 
-            </dl>
-        </section>
+                <section class="equipo-datos">
+                    <div class="equipo-datos-card container">
+
+                        <!-- Columna equipo -->
+                        <div class="equipo-col">
+                            <div class="equipo-datos-header">
+                                <div class="equipo-datos-header-icon"></div>
+                                <h2>Nuestro equipo</h2>
+                            </div>
+
+                            <div class="team-members">
+
+                                <article class="team-member">
+                                    <div class="team-member-photo"></div>
+                                    <div>
+                                        <h3>Laura Méndez</h3>
+                                        <p>Directora de la organización</p>
+                                    </div>
+                                </article>
+
+                                <article class="team-member">
+                                    <div class="team-member-photo"></div>
+                                    <div>
+                                        <h3>Martín Rojas</h3>
+                                        <p>Coordinador de proyectos</p>
+                                    </div>
+                                </article>
+
+                                <article class="team-member">
+                                    <div class="team-member-photo"></div>
+                                    <div>
+                                        <h3>Ailen Maldonado</h3>
+                                        <p>Responsable de voluntariado</p>
+                                    </div>
+                                </article>
+
+                                <article class="team-member">
+                                    <div class="team-member-photo"></div>
+                                    <div>
+                                        <h3>Diego Fernández</h3>
+                                        <p>Comunicación</p>
+                                    </div>
+                                </article>
+
+                            </div>
+                        </div>
+
+                        <!-- Columna datos institucionales -->
+                        <div class="datos-col institutional-data">
+                            <div class="equipo-datos-header">
+                                <div class="equipo-datos-header-icon"></div>
+                                <h2>Datos institucionales</h2>
+                            </div>
+
+                            <dl>
+                                <div class="data-row">
+                                    <dt>Nombre legal</dt>
+                                    <dd>Red Futuro Verde ONG</dd>
+                                </div>
+
+                                <div class="data-row">
+                                    <dt>Fundación</dt>
+                                    <dd>2018</dd>
+                                </div>
+
+                                <div class="data-row">
+                                    <dt>Ubicación</dt>
+                                    <dd>Buenos Aires, Argentina</dd>
+                                </div>
+
+                                <div class="data-row">
+                                    <dt>Tipo</dt>
+                                    <dd>Organización sin fines de lucro</dd>
+                                </div>
+
+                                <div class="data-row">
+                                    <dt>Ámbito</dt>
+                                    <dd>Ambiental</dd>
+                                </div>
+                            </dl>
+                        </div>
+
+                    </div>
+                </section>
 
     </main>
 
     <!--FOOTER-->
 
-    <footer>
-        <p>© 2018 Red Futuro Verde ONG</p>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-columns">
+
+                <!-- Marca + redes -->
+                <div class="footer-brand">
+                    <img src="imagenes/logo-footer.png" alt="Logo Red Futuro Verde" class="footer-logo">
+                    <p>Juntos construimos un futuro más sostenible para todos.</p>
+                    <div class="footer-social">
+                        <a href="https://instagram.com/redfuturoverde" target="_blank" rel="noopener noreferrer">Instagram</a>
+                        <a href="#" target="_blank" rel="noopener noreferrer">Facebook</a>
+                        <a href="#" target="_blank" rel="noopener noreferrer">Twitter</a>
+                    </div>
+                </div>
+
+                <!-- Enlaces -->
+                <div class="footer-links">
+                    <h4>Enlaces</h4>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="nosotros.html">Nosotros</a></li>
+                        <li><a href="programas.html">Programas</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contacto -->
+                <div class="footer-contact">
+                    <h4>Contacto</h4>
+                    <p>Av. Siempre Viva 123, Buenos Aires, Argentina</p>
+                    <p><a href="tel:+541112345678">+54 11 1234-5678</a></p>
+                    <p><a href="mailto:contacto@redfuturoverde.org">contacto@redfuturoverde.org</a></p>
+                </div>
+
+                <!-- Sumate -->
+                <div class="footer-cta">
+                    <h4>Sumate</h4>
+                    <p>Tu apoyo hace posible un planeta mejor.</p>
+                    <a href="contacto.html" class="btn-donar">Donar ahora</a>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2024 Red Futuro Verde ONG - Todos los derechos reservados.</p>
+            </div>
+        </div>
     </footer>
-    
+
 </body>
 </html>

@@ -5,72 +5,160 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="imagenes/logo-favicom.png" type="image/png">
     <title>Red Futuro Verde</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Red Futuro Verde</h1>
 
-        <!-- NAV -->
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="nosotros.html">Nosotros</a></li>
-                <li><a href="programas.html">Programas</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+    <header class="header">
+        <div class="header-container">
+            <a href="index.html" class="logo-link">
+
+                <img src="imagenes/logo-nav.png" alt="Logo Red Futuro Verde" class="logo">
+
+            </a>
+
+            <!-- NAV -->
+
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="active">Inicio</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="programas.html">Programas</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <!--MAIN-->
     <main>
 
         <!--BANNER-->
-        <section>
-            <img src="imagenes/banners/index.png" alt="Manos sosteniendo una planta joven">
-        </section>
 
-        <!--PRESENTACION-->
-        <section>
-            <h2>Presentacion</h2>
-            <p>
-                Red Futuro Verde es una organización sin fines de lucro dedicada a promover el cuidado del medio ambiente y el desarrollo sostenible en comunidades urbanas.
-            </p>
-        </section>
-        
-        <!--MISION-->
-        <section>
-            <h2>Misión</h2>
-            <p>
-                Impulsar acciones concretas para reducir el impacto ambiental, educar a la sociedad y fomentar hábitos sostenibles.
-            </p>
-        </section>
+        <section class="banner">
+            <div class="banner-container">
 
-        <!--PROGRAMAS-->
-        <section>
-            <h2>Programas</h2>
-            <div>
-                <article>
-                    <h3>🌿 Reforestación urbana</h3>
-                    <p>Plantación de árboles en espacios urbanos.</p>
-                </article>
+                <img src="imagenes/banners/index.png" alt="Manos sosteniendo una planta joven">
 
-                <article>
-                    <h3>♻️ Educación ambiental</h3>
-                    <p>Talleres y concientización sobre reciclaje.</p>
-                </article>
-
-                <article>
-                    <h3>🌎 Voluntariado ecológico</h3>
-                    <p>Actividades comunitarias para cuidar el ambiente.</p>
-                </article>
+                <div class="banner-text">
+                    <h1>Bienvenidos a Red Futuro Verde</h1>
+                    <p>Promoviendo un futuro sostenible y verde para todos.</p>
+                </div>
             </div>
         </section>
 
-    </main>
+        <!--PRESENTACION-->
+
+        <section class="presentation">
+            <div class="presentation-container container">
+                <div class="presentation-icon"></div>
+                <div>
+                    <h2>Presentación</h2>
+                    <p>Red Futuro Verde es una organización sin fines de lucro dedicada a promover el cuidado del medio ambiente y el desarrollo sostenible en comunidades urbanas.</p>
+                </div>
+            </div>
+        </section>
+
+        <!--MISION-->
+
+        <section class="mission">
+            <div class="mission-container">
+                <div class="mission-title-wrapper">
+                    <span class="line"></span>
+                    <div class="mission-icon-placeholder"></div>
+                    <span class="line"></span>
+                </div>
+                <h2>Misión</h2>
+                <p>Impulsar acciones concretas para reducir el impacto ambiental, educar a la sociedad y fomentar hábitos sostenibles.</p>
+            </div>
+        </section>
+
+    <!--PROGRAMAS-->
+    
+    <section class="programs">
+        <div class="container">
+            <p class="programs-label">Nuestros programas</p>
+            <h2>Acciones que transforman</h2>
+
+            <div class="card-container">
+
+                <article class="card">
+                    <div class="card-icon"></div>
+                    <h3>Reforestación urbana</h3>
+                    <p>Plantamos árboles en espacios urbanos para mejorar la calidad del aire y generar más espacios verdes.</p>
+                    <a href="programas.html#reforestacion-urbana" class="btn-ver-mas">Ver más</a>
+                </article>
+
+                <article class="card">
+                    <div class="card-icon"></div>
+                    <h3>Educación ambiental</h3>
+                    <p>Talleres y charlas en escuelas y comunidades sobre reciclaje, consumo responsable y cuidado del planeta.</p>
+                    <a href="programas.html#educacion-ambiental" class="btn-ver-mas">Ver más</a>
+                </article>
+
+                <article class="card">
+                    <div class="card-icon"></div>
+                    <h3>Voluntariado ecológico</h3>
+                    <p>Actividades de limpieza, concientización y acción comunitaria en espacios públicos.</p>
+                    <a href="programas.html#voluntariado-verde" class="btn-ver-mas">Ver más</a>
+                </article>
+
+            </div>
+        </div>
+    </section>
 
     <!--FOOTER-->
-    <footer>
-        <p>© 2018 Red Futuro Verde ONG</p>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-columns">
+
+                <!-- Marca + redes -->
+                <div class="footer-brand">
+                    <img src="imagenes/logo-footer.png" alt="Logo Red Futuro Verde" class="footer-logo">
+                    <p>Juntos construimos un futuro más sostenible para todos.</p>
+                    <div class="footer-social">
+                        <a href="https://instagram.com/redfuturoverde" target="_blank" rel="noopener noreferrer">Instagram</a>
+                        <a href="#" target="_blank" rel="noopener noreferrer">Facebook</a>
+                        <a href="#" target="_blank" rel="noopener noreferrer">Twitter</a>
+                    </div>
+                </div>
+
+                <!-- Enlaces -->
+                <div class="footer-links">
+                    <h4>Enlaces</h4>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="nosotros.html">Nosotros</a></li>
+                        <li><a href="programas.html">Programas</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contacto -->
+                <div class="footer-contact">
+                    <h4>Contacto</h4>
+                    <p>Av. Siempre Viva 123, Buenos Aires, Argentina</p>
+                    <p><a href="tel:+541112345678">+54 11 1234-5678</a></p>
+                    <p><a href="mailto:contacto@redfuturoverde.org">contacto@redfuturoverde.org</a></p>
+                </div>
+
+                <!-- Sumate -->
+                <div class="footer-cta">
+                    <h4>Sumate</h4>
+                    <p>Tu apoyo hace posible un planeta mejor.</p>
+                    <a href="contacto.html" class="btn-donar">Donar ahora</a>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2024 Red Futuro Verde ONG - Todos los derechos reservados.</p>
+            </div>
+        </div>
     </footer>
     
 </body>
